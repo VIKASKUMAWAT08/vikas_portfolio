@@ -4,185 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vikas Kumawat | Full Stack Developer</title>
     <meta name="description"
-        content="Portfolio of Vikas Kumawat, a Full Stack Developer specializing in modern web technologies.">
+        content="Portfolio of Vikas Kumawat, a Full Stack Web Developer specializing in MERN stack and building scalable web experiences.">
+    <title>Vikas Kumawat | Full Stack Developer</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo"><img src="vikas.jpg" alt=""></a>
-            <div class="nav-links">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="menu-btn">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <a href="#" class="logo">
+                <img src="img/vikasdp.jpg" alt="Profile" class="nav-profile-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact" class="btn btn-sm">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <header id="hero" class="hero-section">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-network-connection-nodes-globally-12755-large.mp4"
+                type="video/mp4">
+            <!-- Alternative: Place a local video file named 'hero-bg.mp4' in the img folder and uncomment the line below -->
+            <!-- <source src="img/hero-bg.mp4" type="video/mp4"> -->
+        </video>
+        <div class="video-overlay"></div>
         <div class="container hero-container">
-            <div class="hero-content">
-                <p class="greeting">Hello, I'm</p>
-                <h1 class="name">Vikas Kumawat</h1>
-                <h2 class="title">I am a <span class="typing-text"></span></h2>
-                <p class="description">
-                    Building digital experiences with modern technologies.
-                    Passionate about creating scalable and beautiful web applications.
-                </p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">View Work</a>
+            <div class="hero-text-content">
+                <h1 class="hero-title">Hi, I’m <br><span class="gradient-text">Vikas Kumawat</span></h1>
+                <p class="hero-subtitle">Full Stack Developer | MERN Stack | Building Scalable Web Experiences</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
-                <div class="social-links">
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
             </div>
-            <div class="hero-image">
-                <div class="img-wrapper">
-                    <!-- Placeholder for user image, using a gradient box for now -->
-                    <div class="placeholder-img">
-                        <div class="img-container">
-                            <img src="vikas.jpg" alt="">
-                        </div>
-                    </div>
+            <div class="hero-image-content">
+                <div class="hero-img-box">
+                    <img src="img/vikasdp.jpg" alt="Vikas Kumawat" class="hero-img">
+                    <div class="hero-glow"></div>
                 </div>
             </div>
         </div>
-        <a href="#about" class="scroll-down">
-            <i class="fas fa-chevron-down"></i>
-        </a>
-    </section>
+        <div class="scroll-down">
+            <div class="mouse"></div>
+        </div>
+    </header>
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am a dedicated <strong>Full Stack Developer</strong> with a passion for building efficient and
-                        robust web applications.
-                        With a strong foundation in both front-end and back-end technologies, I enjoy bridging the gap
-                        between engineering and design.
-                    </p>
-                    <p>
-                        My journey in tech is driven by curiosity and a desire to solve real-world problems through
-                        code.
-                        I am constantly learning new skills and staying updated with the latest industry trends.
-                    </p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Projects Completed</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">02+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-box">
+                        <img src="img/vikasdp.jpg" alt="Vikas Kumawat" class="about-img">
+                        <div class="about-glow"></div>
                     </div>
+                </div>
+                <div class="about-text">
+                    <h3>Building better web for the world.</h3>
+                    <p>I'm a passionate Full Stack MERN Developer and BCA student dedicated to crafting clean,
+                        efficient, and scalable web solutions. I focus on solving complex problems with code and
+                        optimizing performance for the best user experience.</p>
+                    <p>With a strong foundation in modern web technologies, I love turning creative ideas into
+                        functional realities.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <section id="skills" class="section bg-alt">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
             <div class="skills-grid">
-                <!-- Frontend -->
+                <!-- Skills content will be populated here -->
                 <div class="skill-category">
                     <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-card">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-wind"></i>
-                            <span>Tailwind</span>
-                        </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="skill-tag"><i class="fa-solid fa-wind"></i> Tailwind</span>
                     </div>
                 </div>
-
-                <!-- Backend -->
                 <div class="skill-category">
                     <h3>Backend</h3>
-                    <div class="skill-items">
-                        <div class="skill-card">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-server"></i>
-                            <span>Express</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-database"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-database"></i>
-                            <span>SQL</span>
-                        </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-node"></i> Node.js</span>
+                        <span class="skill-tag"><i class="fa-brands fa-node-js"></i> Express.js</span>
                     </div>
                 </div>
-
-                <!-- Tools -->
+                <div class="skill-category">
+                    <h3>Database</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-database"></i> MongoDB</span>
+                    </div>
+                </div>
                 <div class="skill-category">
                     <h3>Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-card">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-code-branch"></i>
-                            <span>VS Code</span>
-                        </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fa-solid fa-server"></i> REST APIs</span>
                     </div>
                 </div>
             </div>
@@ -190,70 +141,83 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects section">
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <div class="project-placeholder color-1"></div>
+                <!-- Project Cards -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="img/portfolio.jpeg" alt="MERN Dashboard Project" class="project-img">
                     </div>
-                    <div class="project-info">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-featured online store with cart functionality, user authentication, and payment
-                            gateway integration.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> Live</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <div class="project-placeholder color-2"></div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Task Management App</h3>
-                        <p>A productivity tool to organize tasks with drag-and-drop functionality and real-time updates.
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p class="project-tech">HTML • CSS • JavaScript</p>
+                        <p class="project-desc">
+                            A responsive portfolio website to showcase my skills, projects, and contact information with
+                            a clean and modern UI.
                         </p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>Firebase</span>
-                            <span>CSS</span>
-                        </div>
                         <div class="project-links">
-                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="#" class="link-btn"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/VIKASKUMAWAT08/vikas_portfolio.git" class="link-btn"><i
+                                    class="fa-brands fa-github"></i> Source Code</a>
                         </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="img/physiotherapy.png" alt="Redux Admin Panel" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>physiotherapy website</h3>
+                        <p class="project-tech">HTML • CSS • JavaScript</p>
+                        <p class="project-desc">A professional physiotherapy website designed to showcase services,
+                            contact details, and appointment information with a user-friendly interface.</p>
+                        <div class="project-links">
+                            <a href="#" class="link-btn"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/VIKASKUMAWAT08/physiotherapy-website.git" class="link-btn"><i
+                                    class="fa-brands fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="img/E-commerce.png" alt="React Tailwind App" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Frontend</h3>
+                        <p class="project-tech">HTML • CSS • JavaScript</p>
+                        <p class="project-desc">A responsive e-commerce interface with product listing, filtering, and
+                            add-to-cart functionality using local storage.</p>
+                        <div class="project-links">
+                            <a href="#" class="link-btn"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/VIKASKUMAWAT08/ecommerce-website.git" class="link-btn"><i class="fa-brands fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Journey</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Present</span>
+                        <h3>Full Stack Developer</h3>
+                        <p>Freight & Building Personal Projects</p>
                     </div>
                 </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <div class="project-placeholder color-3"></div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Weather Dashboard</h3>
-                        <p>Real-time weather application using OpenWeatherMap API with location detection and 5-day
-                            forecast.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>API</span>
-                            <span>Styled Components</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> Live</a>
-                        </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3>BCA Student</h3>
+                        <p>Pursuing Bachelor of Computer Applications</p>
                     </div>
                 </div>
             </div>
@@ -261,42 +225,38 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-wrapper">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>vikaskumawat969498@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+91 8107109574</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>India</p>
+                    <h3>Let's Talk</h3>
+                    <p>Have a project in mind or just want to say hi? Feel free to send me a message.</p>
+                    <div class="contact-links">
+                        <a href="mailto:vkvikas0555@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i>
+                            vkvikas0555@gmail.com</a>
+                        <div class="social-links">
+                            <a href="https://github.com/VIKASKUMAWAT08" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/vikas-kumawat082005?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/vikas____kumawat___?igsh=MXV5djNtMTE0YmJuMg=="
+                                aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <form class="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <textarea id="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -305,18 +265,14 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Vikas Kumawat. All rights reserved.</p>
-            <div class="footer-socials">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Vikas Kumawat. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
